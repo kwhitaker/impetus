@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mobxjs/mobx-react-boilerplate.git"
+    "url": "https://github.com/kwhitaker/impetus.git"
   },
   "keywords": [
     "react",
@@ -17,12 +17,12 @@
     "mobx",
     "starter-kit"
   ],
-  "author": "Michel Weststrate <mweststrate@gmail.com> (http://github.com/mweststrate)",
-  "license": "MIT",
+  "author": "Kevin Whitaker <kevin.whitaker.tx@gmail.com> (https://github.com/kwhitaker)",
+  "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/mobxjs/mobx/issues"
+    "url": "https://github.com/kwhitaker/impetus.git/issues"
   },
-  "homepage": "http://mobxjs.github.com/mobx",
+  "homepage": "hhttps://github.com/kwhitaker/impetus.git",
   "devDependencies": {
     "autoprefixer": "^6.3.7",
     "babel-core": "^6.9.1",

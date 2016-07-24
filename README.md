@@ -1,20 +1,14 @@
-mobx-react-boilerplate
-=====================
+# Impetus
 
-A minimal application that combines [MobX](https://mobxjs.github.io/mobx) with [React](https://facebook.github.io/react).
-Supports ES6 and JSX compilation through babel.
+This repo is my attempt at playing around with [MobX](https://mobxjs.github.io/mobx/).  The end product
+is a _very_ pale imitation of the [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=en) plugin
+for Chrome.
 
-* For a more sophisticated project to start with, see the full TodoMVC implementation: [mobx-react-todomvc](https://github.com/mobxjs/mobx-react-todomvc).
-
-### Run the example
-
+## Installation & Dev startup
 ```
-npm install
-npm start
-open http://localhost:3000
+> npm install
+> npm start
 ```
 
-
-### Credits
-
-* [Mendix](http://github.com/mendix) for providing the opportunity to battle test this approach (we're hiring!).
+## Production build
+If you want to run this app somewhere, just do `npm run build` and stick the contents of the `/build` folder somewhere.
