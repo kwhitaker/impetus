@@ -23,4 +23,4 @@ The app does four things:
 4. Allows you to enter a list of To-Dos, which are stored in your browser's local storage.
 
 ## What? No tests? Why is the repo so disorganized??
-Like I said, this is my attempt to play with MobX a bit. As such, I didn't feel the need to write a test suite, and practice good folder organization ;) The app comes as-is, with no warranty :P
+Like I said, this is my attempt to play with MobX a bit. As such, I didn't feel the need to write a test suite, or practice good folder organization 😜 The app comes as-is, with no warranty 😵
