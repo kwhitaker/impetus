@@ -15,16 +15,35 @@ module.exports = {
     publicPath: '/static/'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
   ],
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx', '.scss'],
+    root: [path.join(__dirname, './src')],
+    modulesDirectories: ['node_modules']
   },
   module: {
     loaders: [{
       test: /\.jsx?$/,
       loaders: ['babel'],
       include: path.join(__dirname, 'src')
+    },
+    {
+      test: /\.js$/,
+      loader: 'babel'
+    },
+    {
+      test: /\.css$/,
+      loader: ['style', 'css']
+    },
+    {
+      test: /\.(s?[ac]ss)$/,
+      loaders: [
+        'style?sourceMap',
+        'css?sourceMap',
+        'postcss?sourceMap',
+        'sass?sourceMap&outputStyle=expanded'
+      ]
     }]
   }
-};
+}

@@ -1,0 +1,22 @@
+.awesome-bar-form {
+  margin: 2em 0;
+}
+
+input.awesome-bar {
+  height: auto;
+  width: 100%;
+  line-height: inherit;
+  border: none;
+  border-radius: none;
+  background: transparent;
+  box-shadow: none;
+  color: white;
+  font-size: 4.0rem;
+  border-bottom: 3px solid transparentize(white, 0.25);;
+
+  &:focus {
+    outline: none;
+    border-color: white;
+    box-shadow: none;
+  }
+}

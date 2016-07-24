@@ -1,0 +1,31 @@
+@import "~skeleton-css/css/normalize";
+@import "~skeleton-css/css/skeleton";
+
+.main-content {
+  position: fixed;
+  top: 0; bottom: 0; right: 0; left: 0;
+  padding: 10vh 10px 10px;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.clock {
+  text-align: center;
+  font-size: 10rem;
+  font-weight: bold;
+  color: white;
+}
+
+.container {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.row {
+  padding-left: 2em;
+  padding-right: 2em;
+}
