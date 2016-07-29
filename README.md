@@ -10,13 +10,13 @@ is a _very_ pale imitation of the [Momentum](https://chrome.google.com/webstore/
 ```
 
 ## Production build
-If you want to run this app somewhere, just do `npm run build` and stick the contents of the `/build` folder somewhere.
+If you want to run this app, just do `npm run build` and stick the contents of the `/build` folder somewhere.
 
 ## What it does
 The app does four things:
 
 1. Shows the current hour and minute, which update.
-2. Downloads the daily background image from the [Unsplash API](https://unsplash.com/developers)
+2. Downloads the daily background image from the [Unsplash API](https://unsplash.com/developers).
 3. Provides a knock-off of Chrome's "Awesome Bar", which lets you search Google or navigate to a domain.
   * Searches use Google's "Lucky" action by default.
   * Prefix a search with `g!` to use the standard Google search.
