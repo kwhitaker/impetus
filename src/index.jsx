@@ -1,4 +1,3 @@
-import './scss/global'
 import React from 'react'
 import {render} from 'react-dom'
 import {AppContainer} from 'react-hot-loader'
@@ -16,26 +15,23 @@ const todos = new ToDoStore.fromJS(existingTodos)
 const clock = new Clock()
 const query = new QueryStore()
 
-render(
-  <AppContainer>
-    <Provider viewStore={viewStore} clock={clock} queryStore={query} todoStore={todos}>
-      <App />
-    </Provider>
-  </AppContainer>,
-  document.getElementById('root')
-)
+function renderToRoot (AppComponent) {
+  render(
+    <AppContainer>
+      <Provider viewStore={viewStore} clock={clock} queryStore={query} todoStore={todos}>
+        <AppComponent />
+      </Provider>
+    </AppContainer>,
+    document.getElementById('root')
+  )
+}
+
+renderToRoot(App)
 
 if (module.hot) {
   module.hot.accept('./components/App', () => {
     const NextApp = require('./components/App').default
 
-    render(
-      <AppContainer>
-        <Provider viewStore={viewStore} clock={clock} query={query} todoStore={todos}>
-          <NextApp />
-        </Provider>
-      </AppContainer>,
-      document.getElementById('root')
-    )
+    renderToRoot(NextApp)
   })
 }

@@ -11,13 +11,13 @@ const handleSubmit = (store, evt) => {
   store.searchOrRedirect()
 }
 
-const AwesomeBar = observer(['queryStore'], ({queryStore, className, ...props}) => {
+const AwesomeBar = ({queryStore, className, ...props}) => {
   return (
     <form className={`${className || ''} awesome-bar-form`} onSubmit={handleSubmit.bind(null, queryStore)} {...props}>
       <input className="awesome-bar" onChange={handleChange.bind(null, queryStore)}
         placeholder="Enter a search or URL." value={queryStore.query} tabIndex="1" />
     </form>
   )
-})
+}
 
-export default AwesomeBar
+export default observer(['queryStore'], AwesomeBar)

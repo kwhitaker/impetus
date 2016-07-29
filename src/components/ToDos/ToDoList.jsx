@@ -21,7 +21,7 @@ const ToDoList = ({todoStore, className, ...props}) => {
     : null
 
   return (
-    <div className={classes}>
+    <div className={classes} {...props}>
       {title}
       {list}
       <ToDoInput />
